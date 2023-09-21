@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="/action_page.php">
+        <fieldset class="fieldset-group">
+          <legend>Vos coordonnées:</legend>
+          <div class="coordonnees-group">
+            <div class="form-group">
+              <label for="name">Quel est votre nom ?</label>
+              <input type="text" name="name" id="name" placeholder="N'guettia, Kouakou,  Gorebi" required />
+            </div>
+            <div class="form-group">
+              <label for="prenom">Quel est votre prénom ?</label>
+              <input type="text" name="prenom" id="prenom" placeholder="Jean Anselme ....." required />
+            </div>
+            <div class="form-group">
+              <label for="email">Quel est votre Email ?</label>
+              <input type="email" name="email" id="email" required placeholder="example@gmail.com" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset-group">
+          <legend>votre souhait:</legend>
+          <div class="form-group">
+            <label for="souhait">Faites un souhait que voudriez voir exaucé :</label>
+            <input type="radio" id="etre-riche" name="etre-riche" value="Être Riche" />
+            <label for="etre-riche">Être Riche</label>
+            <input type="radio" id="etre-celebre" name="etre-celebre" value="Être Célèbre" />
+            <label for="etre-celebre">Être Célèbre</label>
+            <input type="radio" id="etre-intelligent" name="etre-intelligent" value="Être encore plus intelligent" />
+            <label for="etre-intelligent">Être encore plus intelligent</label>
+            <input type="radio" id="autre" name="autre" value="autre" />
+            <label for="autre">autre</label>
+          </div>
+          <div class="form-group">
+            <label for="autre-text">Si un "autre"; Veuillez préciser?</label>
+            <textarea name="autre-text" id="autre-text"></textarea>
+          </div>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
