@@ -39,7 +39,7 @@ legend {
 .form-group label {
   margin-right: 5px;
 }
-.form-group input {
+.form-group input {+
   padding: 5px 10px;
   border: 1px solid transparent;
 }
